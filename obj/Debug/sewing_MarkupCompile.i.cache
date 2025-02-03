@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Projects\Csharp\sewing\App.xaml
-21050871935
+10519410531
 2-107778721
-24-1955800901
+32-1182344277
 18-365772321
-MainWindow.xaml;Pages\PageLogin.xaml;
+MainWindow.xaml;Pages\PageAccessories.xaml;Pages\PageAddProduct.xaml;Pages\PageAdmin.xaml;Pages\PageClient.xaml;Pages\PageFabric.xaml;Pages\PageLogin.xaml;Pages\PageManagement.xaml;Pages\PageProduct.xaml;Pages\PageStorage.xaml;
 
 True
 

@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище sewingModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accessories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemNumber" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="AccessoryName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="TypeId" Type="int" Nullable="false" />
+    <Property Name="Width" Type="float" Nullable="false" />
+    <Property Name="Length" Type="float" />
+    <Property Name="Weight" Type="float" />
+    <Property Name="Image" Type="nvarchar" MaxLength="500" />
+    <Property Name="Price" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "sewing.dbo.AccessoryProduct" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="AccessoryProduct">
+    <Key>
+      <PropertyRef Name="AccessoryId" />
+      <PropertyRef Name="ProductId" />
+      <PropertyRef Name="Location" />
+      <PropertyRef Name="Quantity" />
+    </Key>
+    <Property Name="AccessoryId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Location" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Width" Type="float" />
+    <Property Name="Length" Type="float" />
+    <Property Name="Turn" Type="int" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccessoryType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fabric">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemNumber" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="FabricName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="100" />
+    <Property Name="Pattern" Type="nvarchar" MaxLength="100" />
+    <Property Name="Image" Type="nvarchar" MaxLength="500" />
+    <Property Name="Composition" Type="nvarchar" MaxLength="500" />
+    <Property Name="Width" Type="float" Nullable="false" />
+    <Property Name="Length" Type="float" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FabricProduct">
+    <Key>
+      <PropertyRef Name="FabricId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="FabricId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderProduct">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Stage" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ClientId" Type="int" Nullable="false" />
+    <Property Name="ManagerId" Type="int" />
+    <Property Name="Price" Type="int" />
+  </EntityType>
+  <EntityType Name="OrderStage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StageName" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemNumber" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Width" Type="float" Nullable="false" />
+    <Property Name="Length" Type="float" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="500" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StorageAccessories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccessoryId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StorageFabric">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FabricId" Type="int" Nullable="false" />
+    <Property Name="Width" Type="float" Nullable="false" />
+    <Property Name="Length" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK__Accessori__TypeI__4316F928">
+    <End Role="AccessoryType" Type="Self.AccessoryType" Multiplicity="1" />
+    <End Role="Accessories" Type="Self.Accessories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccessoryType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Accessories">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Accessory__Acces__534D60F1">
+    <End Role="Accessories" Type="Self.Accessories" Multiplicity="1" />
+    <End Role="AccessoryProduct" Type="Self.AccessoryProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accessories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AccessoryProduct">
+        <PropertyRef Name="AccessoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Accessory__Produ__5441852A">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="AccessoryProduct" Type="Self.AccessoryProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AccessoryProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FabricPro__Fabri__4D94879B">
+    <End Role="Fabric" Type="Self.Fabric" Multiplicity="1" />
+    <End Role="FabricProduct" Type="Self.FabricProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fabric">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FabricProduct">
+        <PropertyRef Name="FabricId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FabricPro__Produ__4E88ABD4">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="FabricProduct" Type="Self.FabricProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FabricProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderProd__Order__49C3F6B7">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderProduct">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderProd__Produ__4AB81AF0">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__ClientId__45F365D3">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__ManagerI__46E78A0C">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ManagerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__StorageAc__Acces__571DF1D5">
+    <End Role="Accessories" Type="Self.Accessories" Multiplicity="1" />
+    <End Role="StorageAccessories" Type="Self.StorageAccessories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accessories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StorageAccessories">
+        <PropertyRef Name="AccessoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__StorageFa__Fabri__5165187F">
+    <End Role="Fabric" Type="Self.Fabric" Multiplicity="1" />
+    <End Role="StorageFabric" Type="Self.StorageFabric" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fabric">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StorageFabric">
+        <PropertyRef Name="FabricId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__RoleId__38996AB5">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище sewingModelContainer">
+    <EntitySet Name="Accessories" EntityType="Self.Accessories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AccessoryType" EntityType="Self.AccessoryType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fabric" EntityType="Self.Fabric" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FabricProduct" EntityType="Self.FabricProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderStage" EntityType="Self.OrderStage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StorageAccessories" EntityType="Self.StorageAccessories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StorageFabric" EntityType="Self.StorageFabric" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AccessoryProduct" EntityType="Self.AccessoryProduct" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AccessoryProduct].[AccessoryId] AS [AccessoryId], 
+    [AccessoryProduct].[ProductId] AS [ProductId], 
+    [AccessoryProduct].[Location] AS [Location], 
+    [AccessoryProduct].[Width] AS [Width], 
+    [AccessoryProduct].[Length] AS [Length], 
+    [AccessoryProduct].[Turn] AS [Turn], 
+    [AccessoryProduct].[Quantity] AS [Quantity]
+    FROM [dbo].[AccessoryProduct] AS [AccessoryProduct]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Accessori__TypeI__4316F928" Association="Self.FK__Accessori__TypeI__4316F928">
+      <End Role="AccessoryType" EntitySet="AccessoryType" />
+      <End Role="Accessories" EntitySet="Accessories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Accessory__Acces__534D60F1" Association="Self.FK__Accessory__Acces__534D60F1">
+      <End Role="Accessories" EntitySet="Accessories" />
+      <End Role="AccessoryProduct" EntitySet="AccessoryProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Accessory__Produ__5441852A" Association="Self.FK__Accessory__Produ__5441852A">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="AccessoryProduct" EntitySet="AccessoryProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FabricPro__Fabri__4D94879B" Association="Self.FK__FabricPro__Fabri__4D94879B">
+      <End Role="Fabric" EntitySet="Fabric" />
+      <End Role="FabricProduct" EntitySet="FabricProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FabricPro__Produ__4E88ABD4" Association="Self.FK__FabricPro__Produ__4E88ABD4">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="FabricProduct" EntitySet="FabricProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderProd__Order__49C3F6B7" Association="Self.FK__OrderProd__Order__49C3F6B7">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderProd__Produ__4AB81AF0" Association="Self.FK__OrderProd__Produ__4AB81AF0">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__ClientId__45F365D3" Association="Self.FK__Orders__ClientId__45F365D3">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__ManagerI__46E78A0C" Association="Self.FK__Orders__ManagerI__46E78A0C">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__StorageAc__Acces__571DF1D5" Association="Self.FK__StorageAc__Acces__571DF1D5">
+      <End Role="Accessories" EntitySet="Accessories" />
+      <End Role="StorageAccessories" EntitySet="StorageAccessories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__StorageFa__Fabri__5165187F" Association="Self.FK__StorageFa__Fabri__5165187F">
+      <End Role="Fabric" EntitySet="Fabric" />
+      <End Role="StorageFabric" EntitySet="StorageFabric" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__RoleId__38996AB5" Association="Self.FK__Users__RoleId__38996AB5">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

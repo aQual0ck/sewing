@@ -29,7 +29,7 @@ namespace sewing.AuxClasses
         public string Image { get; set; }
         public string Composition { get; set; }
         public double Width { get; set; }
-        public double Length { get; set; }
+        public double? Length { get; set; }
         public int Price { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

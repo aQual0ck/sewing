@@ -3,19 +3,94 @@
   "WorkspaceRootPath": "D:\\Projects\\Csharp\\sewing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pagelogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagelogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pageaddproduct.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageaddproduct.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pagelogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagelogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pageaddproduct.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageaddproduct.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pageadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagestorage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagestorage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagemanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagemanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Student_303\\AppData\\Local\\Temp\\.vsdbgsrc\\fa690a9c2faabe08a4909dc99a88d83f79c955ab43fbc31a16d58f703517debc\\WpfXamlLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pageproduct.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageproduct.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\auxclasses\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:auxclasses\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pageaccessories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageaccessories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pageaccessories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageaccessories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pageadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\auxclasses\\accessories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:auxclasses\\accessories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\pages\\pageproduct.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pageproduct.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagefabric.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagefabric.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagestorage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagestorage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagefabric.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagefabric.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\auxclasses\\fabric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:auxclasses\\fabric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\auxclasses\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:auxclasses\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagemanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagemanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|d:\\projects\\csharp\\sewing\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagelogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagelogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\pages\\pagelogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:pages\\pagelogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|D:\\Projects\\Csharp\\sewing\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{67FA0331-0D6E-4AAB-8649-CA36DD610291}|sewing.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -35,43 +110,278 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PageLogin.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageLogin.xaml.cs",
-              "RelativeDocumentMoniker": "Pages\\PageLogin.xaml.cs",
-              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageLogin.xaml.cs",
-              "RelativeToolTip": "Pages\\PageLogin.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAACPAAAA",
+              "Title": "Pages\\PageAddProduct.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAddProduct.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageAddProduct.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAddProduct.xaml.cs",
+              "RelativeToolTip": "Pages\\PageAddProduct.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T07:42:46.125Z",
+              "WhenOpened": "2025-02-03T07:50:26.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PageAddProduct.xaml",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAddProduct.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageAddProduct.xaml",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAddProduct.xaml",
+              "RelativeToolTip": "Pages\\PageAddProduct.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-03T07:44:36.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Accessories.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Accessories.cs",
+              "RelativeDocumentMoniker": "AuxClasses\\Accessories.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Accessories.cs",
+              "RelativeToolTip": "AuxClasses\\Accessories.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:20:41.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PageAdmin.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageAdmin.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAdmin.xaml.cs",
+              "RelativeToolTip": "Pages\\PageAdmin.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T07:01:27.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageAdmin.xaml",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAdmin.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageAdmin.xaml",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAdmin.xaml",
+              "RelativeToolTip": "Pages\\PageAdmin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T06:50:47.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PageAccessories.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAccessories.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageAccessories.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAccessories.xaml.cs",
+              "RelativeToolTip": "Pages\\PageAccessories.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:19:29.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PageAccessories.xaml",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAccessories.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageAccessories.xaml",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageAccessories.xaml",
+              "RelativeToolTip": "Pages\\PageAccessories.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-03T07:06:19.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageManagement.xaml",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageManagement.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageManagement.xaml",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageManagement.xaml",
+              "RelativeToolTip": "Pages\\PageManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T06:51:18.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PageProduct.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageProduct.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageProduct.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageProduct.xaml.cs",
+              "RelativeToolTip": "Pages\\PageProduct.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:26:54.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageStorage.xaml",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageStorage.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageStorage.xaml",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageStorage.xaml",
+              "RelativeToolTip": "Pages\\PageStorage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-27T06:51:09.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WpfXamlLoader.cs",
+              "DocumentMoniker": "C:\\Users\\Student_303\\AppData\\Local\\Temp\\.vsdbgsrc\\fa690a9c2faabe08a4909dc99a88d83f79c955ab43fbc31a16d58f703517debc\\WpfXamlLoader.cs",
+              "ToolTip": "C:\\Users\\Student_303\\AppData\\Local\\Temp\\.vsdbgsrc\\fa690a9c2faabe08a4909dc99a88d83f79c955ab43fbc31a16d58f703517debc\\WpfXamlLoader.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAswGYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:33:37.623Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Product.cs",
+              "RelativeDocumentMoniker": "AuxClasses\\Product.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Product.cs",
+              "RelativeToolTip": "AuxClasses\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T07:33:10.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PageFabric.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageFabric.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageFabric.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageFabric.xaml.cs",
+              "RelativeToolTip": "Pages\\PageFabric.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T11:41:42.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PageProduct.xaml",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageProduct.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageProduct.xaml",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageProduct.xaml",
+              "RelativeToolTip": "Pages\\PageProduct.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-03T07:24:23.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PageFabric.xaml",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageFabric.xaml",
+              "RelativeDocumentMoniker": "Pages\\PageFabric.xaml",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageFabric.xaml",
+              "RelativeToolTip": "Pages\\PageFabric.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-29T07:11:46.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PageStorage.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageStorage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageStorage.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageStorage.xaml.cs",
+              "RelativeToolTip": "Pages\\PageStorage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T07:03:23.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PageManagement.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageManagement.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageManagement.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageManagement.xaml.cs",
+              "RelativeToolTip": "Pages\\PageManagement.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T07:03:04.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Model1.Context.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Model1.Context.cs",
+              "RelativeDocumentMoniker": "AuxClasses\\Model1.Context.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Model1.Context.cs",
+              "RelativeToolTip": "AuxClasses\\Model1.Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T11:48:51.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Fabric.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Fabric.cs",
+              "RelativeDocumentMoniker": "AuxClasses\\Fabric.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\AuxClasses\\Fabric.cs",
+              "RelativeToolTip": "AuxClasses\\Fabric.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T06:59:03.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PageLogin.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageLogin.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\PageLogin.xaml.cs",
+              "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageLogin.xaml.cs",
+              "RelativeToolTip": "Pages\\PageLogin.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAYwDUAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T07:42:46.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "PageLogin.xaml",
               "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\Pages\\PageLogin.xaml",
               "RelativeDocumentMoniker": "Pages\\PageLogin.xaml",
               "ToolTip": "D:\\Projects\\Csharp\\sewing\\Pages\\PageLogin.xaml",
               "RelativeToolTip": "Pages\\PageLogin.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-15T07:29:13.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T07:29:13.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 22,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "D:\\Projects\\Csharp\\sewing\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T07:33:29.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T07:33:29.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 19,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Projects\\Csharp\\sewing\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -79,8 +389,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T07:33:27.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T07:33:27.459Z"
             }
           ]
         }

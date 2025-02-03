@@ -24,12 +24,12 @@ namespace sewing.AuxClasses
         public int Id { get; set; }
         public string ItemNumber { get; set; }
         public string AccessoryName { get; set; }
-        public int TypeId { get; set; }
-        public double Width { get; set; }
+        public int? TypeId { get; set; }
+        public double? Width { get; set; }
         public Nullable<double> Length { get; set; }
         public Nullable<double> Weight { get; set; }
         public string Image { get; set; }
-        public int Price { get; set; }
+        public int? Price { get; set; }
     
         public virtual AccessoryType AccessoryType { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

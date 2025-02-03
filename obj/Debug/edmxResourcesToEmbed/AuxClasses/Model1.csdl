@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sewingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Accessories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AccessoryName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TypeId" Type="Int32" Nullable="false" />
+    <Property Name="Width" Type="Double" Nullable="false" />
+    <Property Name="Length" Type="Double" />
+    <Property Name="Weight" Type="Double" />
+    <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AccessoryType" Relationship="Self.FK__Accessori__TypeI__4316F928" FromRole="Accessories" ToRole="AccessoryType" />
+    <NavigationProperty Name="AccessoryProduct" Relationship="Self.FK__Accessory__Acces__534D60F1" FromRole="Accessories" ToRole="AccessoryProduct" />
+    <NavigationProperty Name="StorageAccessories" Relationship="Self.FK__StorageAc__Acces__571DF1D5" FromRole="Accessories" ToRole="StorageAccessories" />
+  </EntityType>
+  <EntityType Name="AccessoryType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Accessories" Relationship="Self.FK__Accessori__TypeI__4316F928" FromRole="AccessoryType" ToRole="Accessories" />
+  </EntityType>
+  <EntityType Name="Fabric">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FabricName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Color" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Pattern" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Composition" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Width" Type="Double" Nullable="false" />
+    <Property Name="Length" Type="Double" Nullable="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="StorageFabric" Relationship="Self.FK__StorageFa__Fabri__5165187F" FromRole="Fabric" ToRole="StorageFabric" />
+    <NavigationProperty Name="Product" Relationship="Self.FabricProduct" FromRole="Fabric" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="OrderProduct">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__OrderProd__Order__49C3F6B7" FromRole="OrderProduct" ToRole="Orders" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__OrderProd__Produ__4AB81AF0" FromRole="OrderProduct" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Stage" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClientId" Type="Int32" Nullable="false" />
+    <Property Name="ManagerId" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <NavigationProperty Name="OrderProduct" Relationship="Self.FK__OrderProd__Order__49C3F6B7" FromRole="Orders" ToRole="OrderProduct" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Orders__ClientId__45F365D3" FromRole="Orders" ToRole="Users" />
+    <NavigationProperty Name="Users1" Relationship="Self.FK__Orders__ManagerI__46E78A0C" FromRole="Orders" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="OrderStage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StageName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Width" Type="Double" Nullable="false" />
+    <Property Name="Length" Type="Double" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderProduct" Relationship="Self.FK__OrderProd__Produ__4AB81AF0" FromRole="Product" ToRole="OrderProduct" />
+    <NavigationProperty Name="AccessoryProduct" Relationship="Self.FK__Accessory__Produ__5441852A" FromRole="Product" ToRole="AccessoryProduct" />
+    <NavigationProperty Name="Fabric" Relationship="Self.FabricProduct" FromRole="Product" ToRole="Fabric" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__RoleId__38996AB5" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="StorageAccessories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccessoryId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Accessories" Relationship="Self.FK__StorageAc__Acces__571DF1D5" FromRole="StorageAccessories" ToRole="Accessories" />
+  </EntityType>
+  <EntityType Name="StorageFabric">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FabricId" Type="Int32" Nullable="false" />
+    <Property Name="Width" Type="Double" Nullable="false" />
+    <Property Name="Length" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Fabric" Relationship="Self.FK__StorageFa__Fabri__5165187F" FromRole="StorageFabric" ToRole="Fabric" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__ClientId__45F365D3" FromRole="Users" ToRole="Orders" />
+    <NavigationProperty Name="Orders1" Relationship="Self.FK__Orders__ManagerI__46E78A0C" FromRole="Users" ToRole="Orders" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK__Users__RoleId__38996AB5" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="AccessoryProduct">
+    <Key>
+      <PropertyRef Name="AccessoryId" />
+      <PropertyRef Name="ProductId" />
+      <PropertyRef Name="Location" />
+      <PropertyRef Name="Quantity" />
+    </Key>
+    <Property Name="AccessoryId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Width" Type="Double" />
+    <Property Name="Length" Type="Double" />
+    <Property Name="Turn" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Accessories" Relationship="Self.FK__Accessory__Acces__534D60F1" FromRole="AccessoryProduct" ToRole="Accessories" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Accessory__Produ__5441852A" FromRole="AccessoryProduct" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK__Accessori__TypeI__4316F928">
+    <End Role="AccessoryType" Type="Self.AccessoryType" Multiplicity="1" />
+    <End Role="Accessories" Type="Self.Accessories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccessoryType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Accessories">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Accessory__Acces__534D60F1">
+    <End Role="Accessories" Type="Self.Accessories" Multiplicity="1" />
+    <End Role="AccessoryProduct" Type="Self.AccessoryProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accessories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AccessoryProduct">
+        <PropertyRef Name="AccessoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__StorageAc__Acces__571DF1D5">
+    <End Role="Accessories" Type="Self.Accessories" Multiplicity="1" />
+    <End Role="StorageAccessories" Type="Self.StorageAccessories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accessories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StorageAccessories">
+        <PropertyRef Name="AccessoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__StorageFa__Fabri__5165187F">
+    <End Role="Fabric" Type="Self.Fabric" Multiplicity="1" />
+    <End Role="StorageFabric" Type="Self.StorageFabric" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fabric">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StorageFabric">
+        <PropertyRef Name="FabricId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderProd__Order__49C3F6B7">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderProduct">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderProd__Produ__4AB81AF0">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__ClientId__45F365D3">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__ManagerI__46E78A0C">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ManagerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Accessory__Produ__5441852A">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="AccessoryProduct" Type="Self.AccessoryProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AccessoryProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__RoleId__38996AB5">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FabricProduct">
+    <End Role="Fabric" Type="Self.Fabric" Multiplicity="*" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="sewingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accessories" EntityType="Self.Accessories" />
+    <EntitySet Name="AccessoryType" EntityType="Self.AccessoryType" />
+    <EntitySet Name="Fabric" EntityType="Self.Fabric" />
+    <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="OrderStage" EntityType="Self.OrderStage" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="StorageAccessories" EntityType="Self.StorageAccessories" />
+    <EntitySet Name="StorageFabric" EntityType="Self.StorageFabric" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="AccessoryProduct" EntityType="Self.AccessoryProduct" />
+    <AssociationSet Name="FK__Accessori__TypeI__4316F928" Association="Self.FK__Accessori__TypeI__4316F928">
+      <End Role="AccessoryType" EntitySet="AccessoryType" />
+      <End Role="Accessories" EntitySet="Accessories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Accessory__Acces__534D60F1" Association="Self.FK__Accessory__Acces__534D60F1">
+      <End Role="Accessories" EntitySet="Accessories" />
+      <End Role="AccessoryProduct" EntitySet="AccessoryProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__StorageAc__Acces__571DF1D5" Association="Self.FK__StorageAc__Acces__571DF1D5">
+      <End Role="Accessories" EntitySet="Accessories" />
+      <End Role="StorageAccessories" EntitySet="StorageAccessories" />
+    </AssociationSet>
+    <AssociationSet Name="FK__StorageFa__Fabri__5165187F" Association="Self.FK__StorageFa__Fabri__5165187F">
+      <End Role="Fabric" EntitySet="Fabric" />
+      <End Role="StorageFabric" EntitySet="StorageFabric" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderProd__Order__49C3F6B7" Association="Self.FK__OrderProd__Order__49C3F6B7">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderProd__Produ__4AB81AF0" Association="Self.FK__OrderProd__Produ__4AB81AF0">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__ClientId__45F365D3" Association="Self.FK__Orders__ClientId__45F365D3">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__ManagerI__46E78A0C" Association="Self.FK__Orders__ManagerI__46E78A0C">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Accessory__Produ__5441852A" Association="Self.FK__Accessory__Produ__5441852A">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="AccessoryProduct" EntitySet="AccessoryProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__RoleId__38996AB5" Association="Self.FK__Users__RoleId__38996AB5">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FabricProduct" Association="Self.FabricProduct">
+      <End Role="Fabric" EntitySet="Fabric" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

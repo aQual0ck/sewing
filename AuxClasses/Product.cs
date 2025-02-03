@@ -25,8 +25,8 @@ namespace sewing.AuxClasses
         public int Id { get; set; }
         public string ItemNumber { get; set; }
         public string ProductName { get; set; }
-        public double Width { get; set; }
-        public double Length { get; set; }
+        public double? Width { get; set; }
+        public double? Length { get; set; }
         public string Image { get; set; }
         public string Notes { get; set; }
     
