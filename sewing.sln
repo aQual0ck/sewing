@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sewing", "sewing.csproj", "{67FA0331-0D6E-4AAB-8649-CA36DD610291}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRegistration", "..\UserRegistration\UserRegistration.csproj", "{016E82A8-7F72-4C38-918E-3ADED5C0AA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRegistration.Tests", "..\UserRegistration.Tests\UserRegistration.Tests.csproj", "{04BB3654-8170-43A9-8DE2-C2A780B9DFCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{67FA0331-0D6E-4AAB-8649-CA36DD610291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67FA0331-0D6E-4AAB-8649-CA36DD610291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67FA0331-0D6E-4AAB-8649-CA36DD610291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{016E82A8-7F72-4C38-918E-3ADED5C0AA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016E82A8-7F72-4C38-918E-3ADED5C0AA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016E82A8-7F72-4C38-918E-3ADED5C0AA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016E82A8-7F72-4C38-918E-3ADED5C0AA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BB3654-8170-43A9-8DE2-C2A780B9DFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BB3654-8170-43A9-8DE2-C2A780B9DFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BB3654-8170-43A9-8DE2-C2A780B9DFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BB3654-8170-43A9-8DE2-C2A780B9DFCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

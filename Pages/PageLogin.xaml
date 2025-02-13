@@ -16,6 +16,11 @@
             <PasswordBox Name="psbPassword" Width="120"/>
             <Button Name="btnLogin" Width="75" Height="25" Margin="5" Content="Вход" 
                     Click="btnLogin_Click"/>
+            <TextBlock Name="tbSignUp" HorizontalAlignment="Center">
+                <Hyperlink NavigateUri="PageSignUp.xaml">
+                    Регистрация    
+                </Hyperlink>
+            </TextBlock>
             <TextBlock Name="tbWarning" Text="Неверный логин или пароль" Visibility="Hidden"/>
             <TextBlock Name="tbNoText" Text="Введите логин и пароль" Visibility="Hidden"/>
         </StackPanel>

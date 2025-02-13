@@ -20,10 +20,31 @@ namespace sewing.Pages
     /// </summary>
     public partial class PageProduct : Page
     {
-        public PageProduct()
+        public bool isEditable;
+        public PageProduct(bool isAdmin)
         {
             InitializeComponent();
             dgrProduct.ItemsSource = AuxClasses.DBClass.entObj.Product.ToList();
+            isEditable = isAdmin;
+            MenuItem menuAdd = new MenuItem()
+            {
+                Header = "Добавить",
+                Name = "menuAdd"
+            };
+            menuAdd.Click += menuAdd_Click;
+            if (isEditable == true)
+                menu.Items.Add(menuAdd);
+        }
+
+        private void DataGridRow_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (isEditable == true) 
+                AuxClasses.FrameClass.frmObj.Navigate(new PageEditProduct(dgrProduct.SelectedItem));
+        }
+
+        private void menuAdd_Click(object sender, RoutedEventArgs e)
+        {
+            AuxClasses.FrameClass.frmObj.Navigate(new PageAddProduct());
         }
     }
 }

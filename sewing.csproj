@@ -133,6 +133,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageAddFabric.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageAddProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -142,6 +146,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PageClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageEditFabric.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageEditProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,6 +173,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageSignUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageStorage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -170,6 +186,9 @@
     <Compile Include="Pages\PageAccessories.xaml.cs">
       <DependentUpon>PageAccessories.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PageAddFabric.xaml.cs">
+      <DependentUpon>PageAddFabric.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageAddProduct.xaml.cs">
       <DependentUpon>PageAddProduct.xaml</DependentUpon>
     </Compile>
@@ -178,6 +197,12 @@
     </Compile>
     <Compile Include="Pages\PageClient.xaml.cs">
       <DependentUpon>PageClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEditFabric.xaml.cs">
+      <DependentUpon>PageEditFabric.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEditProduct.xaml.cs">
+      <DependentUpon>PageEditProduct.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageFabric.xaml.cs">
       <DependentUpon>PageFabric.xaml</DependentUpon>
@@ -190,6 +215,9 @@
     </Compile>
     <Compile Include="Pages\PageProduct.xaml.cs">
       <DependentUpon>PageProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageSignUp.xaml.cs">
+      <DependentUpon>PageSignUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageStorage.xaml.cs">
       <DependentUpon>PageStorage.xaml</DependentUpon>
@@ -242,6 +270,11 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\UserRegistration\UserRegistration.csproj">
+      <Project>{016e82a8-7f72-4c38-918e-3aded5c0aa5f}</Project>
+      <Name>UserRegistration</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

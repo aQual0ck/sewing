@@ -24,7 +24,7 @@
                 <Frame Source="PageAccessories.xaml"/>
             </TabItem>
             <TabItem Header="Изделия">
-                <Frame Source="PageProduct.xaml"/>
+                <Frame Name="frmProduct"/>
             </TabItem>
         </TabControl>
     </Grid>

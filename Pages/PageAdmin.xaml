@@ -18,7 +18,7 @@
         </Menu>
         <TabControl Grid.Row="1">
             <TabItem Header="Изделия">
-                <Frame Source="PageProduct.xaml"/>
+                <Frame Name="frmAdmin"/>
             </TabItem>
         </TabControl>
     </Grid>

@@ -1,0 +1,32 @@
+﻿<Page x:Class="sewing.Pages.PageSignUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sewing.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageSignUp">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Логин" Margin="5"/>
+            <TextBox Name="txbLogin" Width="150"/>
+            <TextBlock Text="Пароль" Margin="5"/>
+            <PasswordBox Name="psbPassword" Width="150" 
+                         PasswordChanged="psbPassword_PasswordChanged"/>
+            <TextBlock Text="Полное имя" Margin="5"/>
+            <TextBox Name="txbFullName" Width="150"/>
+            <Button Name="btnSignUp" Width="125" Height="25" Margin="5" 
+                    Content="Зарегистрироваться" Click="btnSignUp_Click"/>
+            <TextBlock Name="tbSignUp" HorizontalAlignment="Center">
+                <Hyperlink NavigateUri="PageLogin.xaml">
+                    Вход в систему
+                </Hyperlink>
+            </TextBlock>
+            <TextBlock Name="tbPasswordStr1" Text="Сила пароля:" 
+                       Visibility="Hidden"/>
+            <TextBlock Name="tbPasswordStr2" Visibility="Hidden"/>
+        </StackPanel>
+    </Grid>
+</Page>

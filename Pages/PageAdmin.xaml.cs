@@ -23,6 +23,7 @@ namespace sewing.Pages
         public PageAdmin()
         {
             InitializeComponent();
+            frmAdmin.Navigate(new PageProduct(true));
         }
 
         private void menuLogOut_Click(object sender, RoutedEventArgs e)

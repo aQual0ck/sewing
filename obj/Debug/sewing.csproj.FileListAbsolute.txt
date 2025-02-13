@@ -38,3 +38,13 @@ D:\Projects\Csharp\sewing\obj\Debug\Pages\PageProduct.g.cs
 D:\Projects\Csharp\sewing\obj\Debug\Pages\PageProduct.baml
 D:\Projects\Csharp\sewing\obj\Debug\Pages\PageAddProduct.g.cs
 D:\Projects\Csharp\sewing\obj\Debug\Pages\PageAddProduct.baml
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageEditProduct.g.cs
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageEditProduct.baml
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageAddFabric.g.cs
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageEditFabric.g.cs
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageAddFabric.baml
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageEditFabric.baml
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageSignUp.g.cs
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageSignUp.baml
+D:\Projects\Csharp\sewing\bin\Debug\UserRegistration.dll
+D:\Projects\Csharp\sewing\bin\Debug\UserRegistration.pdb
