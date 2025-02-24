@@ -24,6 +24,7 @@ namespace sewing.Pages
         {
             InitializeComponent();
             frmProduct.Navigate(new PageProduct(false));
+            frmFabric.Navigate(new PageFabric(false));
         }
 
         private void menuLogOut_Click(object sender, RoutedEventArgs e)

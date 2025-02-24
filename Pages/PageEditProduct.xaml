@@ -33,11 +33,13 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Ширина:" Width="150"/>
-                <TextBox Name="txbWidth" Width="150" Margin="5, 5, 0, 5" Text="{Binding Width}"/>
+                <TextBox Name="txbWidth" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Width}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Длина:" Width="150"/>
-                <TextBox Name="txbLength" Width="150" Margin="5, 5, 0, 5" Text="{Binding Lenght}"/>
+                <TextBox Name="txbLength" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Length}"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Заметки:" Width="150"/>

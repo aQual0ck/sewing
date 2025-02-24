@@ -23,6 +23,7 @@ namespace sewing.Pages
         public PageStorage()
         {
             InitializeComponent();
+            frmFabric.Navigate(new PageFabric(true));
         }
 
         private void menuLogOut_Click(object sender, RoutedEventArgs e)

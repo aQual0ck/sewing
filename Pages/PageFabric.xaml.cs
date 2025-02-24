@@ -20,10 +20,18 @@ namespace sewing.Pages
     /// </summary>
     public partial class PageFabric : Page
     {
-        public PageFabric()
+        bool isEditable;
+        public PageFabric(bool isNotClient)
         {
             InitializeComponent();
+            isEditable = isNotClient;
             dgrFabric.ItemsSource = AuxClasses.DBClass.entObj.Fabric.ToList();
+        }
+
+        private void DataGridRow_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (isEditable)
+                AuxClasses.FrameClass.frmObj.Navigate(new PageEditFabric(dgrFabric.SelectedItem));
         }
     }
 }

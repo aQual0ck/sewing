@@ -31,9 +31,18 @@ namespace sewing.Pages
                 Header = "Добавить",
                 Name = "menuAdd"
             };
+            MenuItem menuCutting = new MenuItem()
+            {
+                Header = "Раскрой",
+                Name = "menuCutting"
+            };
             menuAdd.Click += menuAdd_Click;
             if (isEditable == true)
+            {
                 menu.Items.Add(menuAdd);
+                menu.Items.Add(menuCutting);
+            }
+            menuCutting.Click += menuCutting_Click;
         }
 
         private void DataGridRow_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -45,6 +54,11 @@ namespace sewing.Pages
         private void menuAdd_Click(object sender, RoutedEventArgs e)
         {
             AuxClasses.FrameClass.frmObj.Navigate(new PageAddProduct());
+        }
+
+        private void menuCutting_Click(object sender, RoutedEventArgs e)
+        {
+            AuxClasses.FrameClass.frmObj.Navigate(new PageCutting());
         }
     }
 }

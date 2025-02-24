@@ -18,7 +18,7 @@
         </Menu>
         <TabControl Grid.Row="1">
             <TabItem Header="Ткани">
-                <Frame Source="PageFabric.xaml"/>
+                <Frame Name="frmFabric"/>
             </TabItem>
             <TabItem Header="Фурнитуры">
                 <Frame Source="PageAccessories.xaml"/>

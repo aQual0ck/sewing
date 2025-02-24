@@ -48,3 +48,5 @@ D:\Projects\Csharp\sewing\obj\Debug\Pages\PageSignUp.g.cs
 D:\Projects\Csharp\sewing\obj\Debug\Pages\PageSignUp.baml
 D:\Projects\Csharp\sewing\bin\Debug\UserRegistration.dll
 D:\Projects\Csharp\sewing\bin\Debug\UserRegistration.pdb
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageCutting.g.cs
+D:\Projects\Csharp\sewing\obj\Debug\Pages\PageCutting.baml

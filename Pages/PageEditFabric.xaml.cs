@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace sewing.Pages
 {
@@ -20,9 +21,29 @@ namespace sewing.Pages
     /// </summary>
     public partial class PageEditFabric : Page
     {
-        public PageEditFabric()
+        AuxClasses.Fabric realF;
+        public PageEditFabric(object fabric)
         {
             InitializeComponent();
+            DataContext = fabric;
+
+            var id = TypeDescriptor.GetProperties(DataContext)["Id"].GetValue(DataContext);
+            realF = AuxClasses.DBClass.entObj.Fabric.FirstOrDefault(x => x.Id == (int)id);
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuBack_Click(object sender, RoutedEventArgs e)
+        {
+            AuxClasses.FrameClass.frmObj.GoBack();
+        }
+
+        private void menuCutting_Click(object sender, RoutedEventArgs e)
+        {
+            AuxClasses.FrameClass.frmObj.Navigate(new PageCutting());
         }
     }
 }

@@ -10,6 +10,11 @@
 
     <Grid>
         <DataGrid Name="dgrFabric" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Артикул" Width="*" Binding="{Binding ItemNumber}"/>
                 <DataGridTextColumn Header="Название" Width="*" Binding="{Binding FabricName}"/>
@@ -17,7 +22,7 @@
                 <DataGridTextColumn Header="Узор" Width="*" Binding="{Binding Pattern}"/>
                 <DataGridTextColumn Header="Состав" Width="*" Binding="{Binding Composition}"/>
                 <DataGridTextColumn Header="Ширина" Width="*" Binding="{Binding Width}"/>
-                <DataGridTextColumn Header="Длина" Width="*" Binding="{Binding Lenght}"/>
+                <DataGridTextColumn Header="Длина" Width="*" Binding="{Binding Length}"/>
                 <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding Price}"/>
             </DataGrid.Columns>
         </DataGrid>

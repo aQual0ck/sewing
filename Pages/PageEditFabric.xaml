@@ -9,6 +9,66 @@
       Title="PageEditFabric">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="430"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" VerticalAlignment="Center">
+            <MenuItem Name="menuBack" Header="Назад" Click="menuBack_Click"/>
+            <MenuItem Name="menuCutting" Header="Раскрой" Click="menuCutting_Click"/>
+        </Menu>
+        <Rectangle Width="350" Height="325" Fill="White" Stroke="#666666" 
+           Grid.Row="1"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Артикул:" Width="150"/>
+                <TextBox Name="txbItemNumber" Width="150" Margin="5, 5, 0, 5" 
+                 Text="{Binding ItemNumber}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Наименование:" Width="150"/>
+                <TextBox Name="txbProductName" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding ProductName}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Цвет:" Width="150"/>
+                <TextBox Name="txbColor" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Color}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Узор:" Width="150"/>
+                <TextBox Name="txbPattern" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Pattern}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Состав:" Width="150"/>
+                <TextBox Name="txbComposition" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Composition}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Ширина:" Width="150"/>
+                <TextBox Name="txbWidth" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Width}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Длина:" Width="150"/>
+                <TextBox Name="txbLength" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Length}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Цена:" Width="150"/>
+                <TextBox Name="txbPrice" Width="150" Margin="5, 5, 0, 5" 
+                         Text="{Binding Price}"/>
+            </StackPanel>
+            <Button Name="btnSave" Content="Сохранить" Click="btnSave_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>

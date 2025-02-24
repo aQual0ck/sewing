@@ -149,6 +149,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageCutting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageEditFabric.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -197,6 +201,9 @@
     </Compile>
     <Compile Include="Pages\PageClient.xaml.cs">
       <DependentUpon>PageClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageCutting.xaml.cs">
+      <DependentUpon>PageCutting.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageEditFabric.xaml.cs">
       <DependentUpon>PageEditFabric.xaml</DependentUpon>
